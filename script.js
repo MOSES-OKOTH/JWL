@@ -1,4 +1,11 @@
 function removePreloader(){
+    const link = document.querySelector(".links");
+    link.style.display = "none"
+
+    const closeBtn = document.querySelector(".ham-close");
+    closeBtn.style.display = "none"
+
+
     let preloader = document.querySelector('.preloader');
     let time = 1500; // milliseconds
 
@@ -24,3 +31,21 @@ function setCopyrightYear(){
 }
 
 setCopyrightYear();
+
+function hideHamMenu(){
+    const link = document.querySelector(".links");
+    const closeBtn = document.querySelector(".ham-close");
+
+    link.style.display = "none"
+    closeBtn.style.display = "none"
+}
+
+
+function showHamMenu(){
+    const link = document.querySelector(".links");
+    const closeBtn = document.querySelector(".ham-close");
+
+    link.style.display = "flex"
+    closeBtn.style.display = "flex"
+    link.style = "animation: slideIn 200ms linear;"
+}
