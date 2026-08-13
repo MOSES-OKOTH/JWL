@@ -1,10 +1,9 @@
 function removePreloader(){
-    const link = document.querySelector(".links");
-    link.style.display = "none"
+    const deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-    const closeBtn = document.querySelector(".ham-close");
-    closeBtn.style.display = "none"
-
+    if(deviceWidth <= 800){
+        hideHamMenu();
+    }
 
     let preloader = document.querySelector('.preloader');
     let time = 1500; // milliseconds
@@ -45,7 +44,7 @@ function showHamMenu(){
     const link = document.querySelector(".links");
     const closeBtn = document.querySelector(".ham-close");
 
-    link.style.display = "flex"
+    link.style = "display: flex;"
     closeBtn.style.display = "flex"
     link.style = "animation: slideIn 200ms linear;"
 }

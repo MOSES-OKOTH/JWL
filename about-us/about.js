@@ -7,7 +7,7 @@ function removePreloader(){
     let int = setInterval(function(){
         if (preloader) {
             preloader.style.display = 'none';
-            document.title = "Home | JWL Youth Ministry Kenya Chapter";
+            document.title = "About Us | JWL Youth Ministry Kenya Chapter";
             clearInterval(int);
         }
     }, time);
@@ -24,3 +24,22 @@ function setCopyrightYear(){
 }
 
 setCopyrightYear();
+
+
+function hideHamMenu(){
+    const link = document.querySelector(".links");
+    const closeBtn = document.querySelector(".ham-close");
+
+    link.style.display = "none"
+    closeBtn.style.display = "none"
+}
+
+
+function showHamMenu(){
+    const link = document.querySelector(".links");
+    const closeBtn = document.querySelector(".ham-close");
+
+    link.style.display = "flex"
+    closeBtn.style.display = "flex"
+    link.style = "animation: slideIn 200ms linear;"
+}
