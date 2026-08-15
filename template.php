@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+    $page_name = "home";
     $page_title = "Home | JWL Youth Ministry Kenya Chapter";
 
     include "../components/head.php";
