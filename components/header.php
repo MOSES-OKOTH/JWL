@@ -13,7 +13,7 @@
 
         <div class="links">
             <a href="#home">HOME</a>
-            <a href="/about-us/">ABOUT US</a>
+            <a href='<?php if($page_name=="home"){echo "./about-us/"; } else{ echo "../about-us/"; } ?>'>ABOUT US</a>
             <a href="">PROGRAMS</a>
             <a href="">EVENTS</a>
             <a href="">MEDIA</a>
