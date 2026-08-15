@@ -3,17 +3,17 @@
 <?php
     $page_title = "Home | JWL Youth Ministry Kenya Chapter";
 
-    include "./components/head.php";
+    include "../components/head.php";
 ?>
 <body onload="removePreloader()">
     <?php
-        include "./components/preloader.php";
-        include "./components/header.php";
+        include "../components/preloader.php";
+        include "../components/header.php";
     ?>
 
 
     <?php
-        include "./components/footer.php";
+        include "../components/footer.php";
     ?>
 </body>
 </html>

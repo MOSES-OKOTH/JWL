@@ -78,7 +78,7 @@
 
 
             <div class="learn-more">
-                <a href="/about-us/">Learn More</a>
+                <a href='<?php if($page_name="home"){ echo "./about-us/"; } else{ echo "../about-us/"; } ?>'>Learn More</a>
 
                 <i class="fa-solid fa-chevron-down" id="scroll-down"></i>
             </div>
@@ -256,8 +256,8 @@
             }
 
             .about-us .who-we-are h2{
-                font-family: 'Playfair Display';
-                font-size:2rem;
+                font-family: 'Oswald';
+                font-size: 3rem;
                 text-align: center;
                 color: var(--blue2);
             }
@@ -287,7 +287,7 @@
 
 
             .about-us .foundation-purpose div h2{
-                font-family: 'Playfair Display';
+                font-family: 'Oswald';
                 font-size: 1.25rem;
                 margin-bottom: 0.5rem;
                 color: var(--blue2);
@@ -384,7 +384,7 @@
 
             .contact-us .contacts-socials h2, .contact-us .contact-form h2{
                 font-size: 1.25rem;
-                font-family: 'Playfair Display';
+                font-family: 'Oswald';
                 font-weight: 600;
                 color: var(--blue2);
             }
@@ -603,7 +603,7 @@
             }
 
             .about-us .who-we-are h2{
-                font-family: 'Playfair Display';
+                font-family: 'Oswald';
                 font-size:1.75rem;
                 text-align: center;
             }
@@ -634,7 +634,7 @@
 
 
             .about-us .foundation-purpose div h2{
-                font-family: 'Playfair Display';
+                font-family: 'Oswald';
                 font-size: 1.25rem;
                 margin-bottom: 0.25rem;
                 color: var(--blue2);
@@ -737,7 +737,7 @@
 
             .contact-us .contacts-socials h2, .contact-us .contact-form h2{
                 font-size: 1.5rem;
-                font-family: 'Playfair Display';
+                font-family: 'Oswald';
                 font-weight: 600;
                 color: var(--blue2);
             }

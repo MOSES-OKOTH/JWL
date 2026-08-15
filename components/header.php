@@ -2,8 +2,8 @@
 <section class="header-container">
     <div class="header">
         <div class="logo">
-            <a href="./">
-                <img src="./gallery/logo.jpeg" alt="JWL Kenya Chapter Logo" loading="lazy">
+            <a href='<?php if($page_name=="home"){echo "./"; } else{ echo "../"; } ?>'>
+                <img src='<?php if($page_name=="home"){ echo "./gallery/logo.jpeg"; } else { echo "../gallery/logo.jpeg"; } ?>' alt="JWL Kenya Chapter Logo" loading="lazy">
                 <p>
                     <span>JWL KENYA CHAPTER</span>
                     <span>Youth Ministry</span>
@@ -12,14 +12,14 @@
         </div>
 
         <div class="links">
-            <a href="#home">HOME</a>
+            <a href='<?php if($page_name=="home"){echo "./"; } else{ echo "../"; } ?>'>HOME</a>
             <a href='<?php if($page_name=="home"){echo "./about-us/"; } else{ echo "../about-us/"; } ?>'>ABOUT US</a>
-            <a href="">PROGRAMS</a>
-            <a href="">EVENTS</a>
-            <a href="">MEDIA</a>
-            <a href="">GET INVOLVED</a>
-            <a href="">CONTACTS</a>
-            <a href=""> <i class="fa-solid fa-heart"></i> SUPPORT US</a>
+            <a href='<?php if($page_name=="home"){echo "./programs/"; } else{ echo "../programs/"; } ?>'>PROGRAMS</a>
+            <a href='<?php if($page_name=="home"){echo "./events/"; } else{ echo "../events"; } ?>'>EVENTS</a>
+            <a href='<?php if($page_name=="home"){echo "./"; } else{ echo "../"; } ?>'>MEDIA</a>
+            <a href='<?php if($page_name=="home"){echo "./media/"; } else{ echo "../media/"; } ?>'>GET INVOLVED</a>
+            <a href='<?php if($page_name=="home"){echo "./contacts/"; } else{ echo "../contacts/"; } ?>'>CONTACTS</a>
+            <a href='<?php if($page_name=="home"){echo "./donate/"; } else{ echo "../donate/"; } ?>'> <i class="fa-solid fa-heart"></i> SUPPORT US</a>
         </div>
 
         <div class="mobile-ham-menu" onclick="showHamMenu()">
