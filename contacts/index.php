@@ -216,7 +216,7 @@
 
             .input-group div p, .subject p, .message p{
                 font-size: 0.9rem;
-                font-weight: 300;
+                font-weight: 400;
                 margin-bottom: 0.5rem;
             }
 
@@ -435,7 +435,7 @@
 
             .input-group div p, .subject p, .message p{
                 font-size: 0.75rem;
-                font-weight: 300;
+                font-weight: 400;
                 margin-bottom: 0.25rem;
             }
 
