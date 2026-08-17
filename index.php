@@ -164,7 +164,7 @@
                 position: relative;
                 width: 100%;
                 height: calc(100vh - 3rem);
-                background-image: url(./gallery/home1.jpeg);
+                background-image: url(./gallery/home2.jpeg);
                 background-position: center;
                 background-repeat: no-repeat;
             }
@@ -516,7 +516,7 @@
                 position: relative;
                 width: 100%;
                 height: calc(100vh - 4rem);
-                background-image: url(./gallery/home1.jpeg);
+                background-image: url(./gallery/home2.jpeg);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
