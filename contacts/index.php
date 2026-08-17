@@ -26,7 +26,9 @@
                             Join us in our mission to empower the next generation! Whether you want to learn more about our programs, partner with us, or support our efforts, we are here to connect with you. Your involvement makes a difference.
                         </p>
 
-                        <a href="tel:+254712345678"><i class="fa-solid fa-phone"></i> +254 712 345 678</a>
+                        <a href="tel:+254798020310"><i class="fa-solid fa-phone"></i> +254 798 020 310</a>
+
+                        <a href="tel:+254792913312"><i class="fa-solid fa-phone"></i> +254 792 913 312</a>
 
                         <a href="https://maps.app.goo.gl/62G6XHJ5RVACUd7WA"><i class="fa-solid fa-map-location"></i> Nakuru, Kenya</a>
 

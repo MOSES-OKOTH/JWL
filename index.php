@@ -36,7 +36,7 @@
                 </h2>
 
                 <p>
-                    <span>Jel Wo Lieec</span> (JWL) Youth Ministry is a vibrant, Christ-centered movement within the Episcopal Church of South Sudan (ECSS). Our name, Jel Wo Lieec, translates to "God, Look Upon Us," a prayerful declaration that reflects our complete dependence on God's grace and guidance in all we do.
+                    <span>Jol Wo Lieec</span> (JWL) Youth Ministry is a vibrant, Christ-centered movement within the Episcopal Church of South Sudan (ECSS). Our name, Jel Wo Lieec, translates to "God, Look Upon Us," a prayerful declaration that reflects our complete dependence on God's grace and guidance in all we do.
                 </p>
             </div>
 
@@ -98,7 +98,7 @@
                 </h5>
 
                 <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a href="+254798020310"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 <a href=""><i class="fa-brands fa-x-twitter"></i> X | Twitter</a>
                 <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
                 <a href=""><i class="fa-brands fa-tiktok"></i> TikTok</a>
@@ -166,6 +166,7 @@
                 height: calc(100vh - 3rem);
                 background-image: url(./gallery/home2.jpeg);
                 background-position: center;
+                background-size: cover;
                 background-repeat: no-repeat;
             }
 
