@@ -186,11 +186,9 @@
         }
 
         .header .ham-close{
-            box-sizing: border-box;
+            /* box-sizing: border-box; */
             display: none;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
             z-index: 1001;
             position: fixed;
             top: 80vh;

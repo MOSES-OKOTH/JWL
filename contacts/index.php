@@ -98,6 +98,7 @@
                 position: relative;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 padding: 4rem;
                 max-width: 100dvw;
                 background: rgba(0,0,0,0.1);
@@ -427,7 +428,8 @@
                 position: relative;
                 width: 100%;
                 display: flex;
-                gap: 1rem;
+                flex-direction: column;
+                gap: 0.5rem;
             }
 
             .input-group div{
@@ -436,8 +438,8 @@
             }
 
             .input-group div p, .subject p, .message p{
-                font-size: 0.75rem;
-                font-weight: 400;
+                font-size: 0.8rem;
+                font-weight: 500;
                 margin-bottom: 0.25rem;
             }
 
@@ -446,9 +448,10 @@
                 width: 100%;
                 border: none;
                 outline: none;
-                padding: 0.25rem;
+                padding: 0.5rem;
                 border-bottom: 1px solid var(--blue2);
                 margin-bottom: 1rem;
+                background: rgba(0,0,0,0.025);
             }
 
             input::placeholder, textarea::placeholder{

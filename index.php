@@ -98,12 +98,13 @@
                 </h5>
 
                 <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
-                <a href="+254798020310"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://wa.me/254798020310" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a href="tel:+254792913312" target="_blank"><i class="fa-solid fa-phone"></i> Call Us</a>
                 <a href=""><i class="fa-brands fa-x-twitter"></i> X | Twitter</a>
                 <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
                 <a href=""><i class="fa-brands fa-tiktok"></i> TikTok</a>
                 <a href=""><i class="fa-brands fa-youtube"></i> YouTube</a>
-                <a href="mailto: jwlkenyachapter@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Mail Us</a>
+                <a href="mailto:jwlkenyachapter@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Mail Us</a>
             </div>
 
             <div class="contact-form">
