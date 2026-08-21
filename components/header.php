@@ -16,7 +16,7 @@
             <a href='<?php if($page_name=="home"){echo "./about-us/"; } else{ echo "../about-us/"; } ?>'>ABOUT US</a>
             <a href='<?php if($page_name=="home"){echo "./programs/"; } else{ echo "../programs/"; } ?>'>PROGRAMS</a>
             <a href='<?php if($page_name=="home"){echo "./events/"; } else{ echo "../events"; } ?>'>EVENTS</a>
-            <a href='<?php if($page_name=="home"){echo "./media/"; } else{ echo "../media/"; } ?>'>MEDIA</a>
+            <a href='<?php if($page_name=="home"){echo "./library/"; } else{ echo "../library/"; } ?>'>LIBRARY</a>
             <!-- <a href='<?php if($page_name=="home"){echo "./media/"; } else{ echo "../media/"; } ?>'>GET INVOLVED</a> -->
             <a href='<?php if($page_name=="home"){echo "./contacts/"; } else{ echo "../contacts/"; } ?>'>CONTACTS</a>
             <a href='<?php if($page_name=="home"){echo "./donate/"; } else{ echo "../donate/"; } ?>'> <i class="fa-solid fa-heart"></i> SUPPORT US</a>

@@ -44,35 +44,35 @@
                             <section class="input-group">
                                 <div>
                                     <p>First Name<span class="required">*</span></p>
-                                    <input type="text" placeholder="First Name">
+                                    <input type="text" placeholder="First Name" id="firstName">
                                 </div>
 
                                 <div>
                                     <p>Last Name<span class="required">*</span></p>
-                                    <input type="text" placeholder="Last Name">
+                                    <input type="text" placeholder="Last Name" id="lastName">
                                 </div>
                             </section>
 
                             <section class="input-group">
                                 <div>
                                     <p>Email</p>
-                                    <input type="text" placeholder="Email">
+                                    <input type="text" placeholder="Email" id="email">
                                 </div>
 
                                 <div>
                                     <p>Phone Number</p>
-                                    <input type="tel" name="" id="" placeholder="Phone Number +2547****">
+                                    <input type="tel" name="" id="phone" placeholder="Phone Number +2547****">
                                 </div>
                             </section>
 
                             <section class="subject">
                                 <p>Subject<span class="required">*</span></p>
-                                <input type="text" name="" id="" placeholder="Subject">
+                                <input type="text" name="" id="subject" placeholder="Subject">
                             </section>
 
                             <section class="message">
                                 <p>Message<span class="required">*</span></p>
-                                <textarea name="" id="" placeholder="Your message"></textarea>
+                                <textarea name="" id="message" placeholder="Your message"></textarea>
                             </section>
 
                             <section class="submit-message">
@@ -88,6 +88,46 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        $(document).ready(function(){
+            let firstName = document.getElementById("firstName");
+            let lastName = document.getElementById("lastName");
+            let email = document.getElementById("email");
+            let phone = document.getElementById("phone");
+            let subject = document.getElementById("subject");
+            let message = document.getElementById("message");
+            const submitBtn = document.getElementById("submit");
+
+            submitBtn.addEventListener("click", function(){
+                if(firstName.value === "" || lastName.value === "" || subject.value === "" || message.value === ""){
+                    alert("Please fill in all required fields.");
+                    return;
+                } else{
+                    $.ajax({
+                        url: "../api/send_message.php",
+                        type: "POST",
+                        data: {
+                            firstName: firstName.value,
+                            lastName: lastName.value,
+                            email: email.value,
+                            phone: phone.value,
+                            subject: subject.value,
+                            message: message.value
+                        },
+                        success: function(response){
+                            alert(`Message sent successfully`)
+                        },
+                        error: function(xhr, status, error){
+                            console.error("Error sending message:", error);
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
 
     
 
