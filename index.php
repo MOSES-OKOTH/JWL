@@ -117,38 +117,38 @@
                 <div class="form-data">
                     <div>
                         <p>First Name</p>
-                        <input type="text" placeholder="First Name">
+                        <input type="text" id="firstName" placeholder="First Name">
                     </div>
 
                     <div>
                         <p>Last Name</p>
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" id="lastName" placeholder="Last Name">
                     </div>
                 </div>
 
                 <div class="form-data">
                     <div>
                         <p>Email</p>
-                        <input type="text" placeholder="Email">
+                        <input type="text" id="email" placeholder="Email">
                     </div>
 
                     <div>
                         <p>Phone Number</p>
-                        <input type="text" placeholder="+2547*********">
+                        <input type="text" id="phone" placeholder="+2547*********">
                     </div>
                 </div>
 
                 <div class="form-others">
                     <p>Subject</p>
-                    <input type="text" placeholder="Subject">
+                    <input type="text" id="subject" placeholder="Subject">
                 </div>
 
                 <div class="form-others message">
                     <p>Message</p>
-                    <textarea type="text" placeholder="Your message to us" ></textarea>
+                    <textarea type="text" id="message_body" placeholder="Your message to us" ></textarea>
                 </div>
 
-                <button id="send-message">Send Message</button>
+                <button id="submit">Send Message</button>
             </div>
         </div>
     </section>
@@ -868,5 +868,26 @@
             }
         }
     </style>
+
+    <script>
+        async function sendMessage(fname,lname,email,phone,subject,message){
+            const data = await fetch("./api/send_message/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    'firstName': fname,
+                    'lastName': lname,
+                    'email': email,
+                    'phone': phone,
+                    'subject': subject,
+                    'message': message,
+                })
+            }).then(res => res.json()).then(message => console.log(message))
+        }
+
+        sendMessage('Moses','Okoth','test@mail.com','+254712345678','TEST MESSAGE','This is a test message')
+    </script>
 </body>
 </html>

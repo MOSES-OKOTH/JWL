@@ -34,7 +34,34 @@
     </div>
 </section>
 
+<section id="notification">
+    <div id="notification-message">
+        <i class="fa-solid fa-exclamation-triangle"></i> <span id="message"></span>
+    </div>
+
+    <div id="close-notification">
+        <i class="fa-solid fa-x"></i>
+    </div>
+</section>
+
 <style>
+    @keyframes notificationIn{
+        0%{
+            transform: translateX(100%);
+        } 100%{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes notificationOut {
+        0%{
+            width: 100%;
+        } 100%{
+            width: 0;
+        }
+    }
+
+
     /* DESKTOP VIEW */
     @media screen and (min-width: 800px) {
         /* HEADER SECTION*/
@@ -119,6 +146,65 @@
             background: var(--gold);
             padding: 0.5rem 0.75rem;
             border-radius: 0.25rem;
+        }
+
+        /* NOTIFICATION SECTION */
+        #notification{
+            z-index: 99;
+            position: fixed;
+            top: 10.5vh;
+            right: 1vw;
+            display: none;
+            flex-direction: row;
+            gap: 2vw;
+            padding: 1vh 1vw;
+            animation: notificationIn 0.5s linear forwards;
+        }
+
+        #notification::after{
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            background: purple;
+            z-index: 99;
+            border-radius: 6px;
+            animation: notificationOut 5s linear forwards;
+            animation-delay: 500ms;
+        }
+
+        #notification #notification-message{
+            font-size: 0.95vw;
+            font-weight: 500;
+        }
+
+        .good-notification{
+            color: black;
+            background: rgba(0, 255, 0, 0.15);
+            border: 2px solid green;
+            border-radius: 6px;
+        }
+
+        .bad-notification{
+            color: white;
+            background: rgba(255, 0, 0, 0.5);
+            border: 2px solid red;
+            border-radius: 6px;
+        }
+
+        #close-notification {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 2px solid white;
+            padding-left: 1vw;
+        }
+
+        #close-notification:hover{
+            cursor: pointer;
+            color: red;
         }
     }
 
@@ -242,5 +328,94 @@
             padding: 0.5rem 0.75rem;
             border-radius: 0.25rem;
         }
+
+        /* NOTIFICATION SECTION */
+        #notification{
+            z-index: 99;
+            max-width: 90vw;
+            position: fixed;
+            top: 7.5vh;
+            right: 4vw;
+            display: none;
+            flex-direction: row;
+            gap: 2.5vw;
+            padding: 0.6vh 2.5vw;
+            animation: notificationIn 0.5s linear forwards;
+        }
+
+        #notification::after{
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            background: purple;
+            z-index: 99;
+            border-radius: 6px;
+            animation: notificationOut 5s linear forwards;
+            animation-delay: 500ms;
+        }
+
+        #notification #notification-message{
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .good-notification{
+            color: black;
+            background: rgba(0, 255, 0, 0.15);
+            border: 2px solid green;
+            border-radius: 6px;
+        }
+
+        .bad-notification{
+            color: white;
+            background: rgba(255, 0, 0, 0.5);
+            border: 2px solid red;
+            border-radius: 6px;
+        }
+
+        #close-notification {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 2px solid white;
+            padding-left: 2.5vw;
+        }
+
+        #close-notification:hover{
+            cursor: pointer;
+            color: red;
+        }
     }
 </style>
+
+
+
+<script>
+    function notify(message, type){
+        let notification = document.getElementById('notification');
+        let notificationMessage = document.getElementById('message');
+        let closeNotification = document.getElementById('close-notification');
+
+        notificationMessage.innerHTML = message;
+        notification.classList.remove('good-notification');
+        notification.classList.remove('bad-notification');
+        notification.classList.add(type+"-notification");
+
+        notification.style.display = 'flex';
+
+        closeNotification.addEventListener('click', function(){
+            notification.style.display = 'none';
+        })
+
+        let closingInterval = window.setInterval(() => {
+            notification.style.display = 'none';
+        }, 5600);
+
+        window.setTimeout(() => {
+            clearInterval(closingInterval);
+        }, 6000);
+    }
+</script>

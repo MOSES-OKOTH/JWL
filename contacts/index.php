@@ -72,7 +72,7 @@
 
                             <section class="message">
                                 <p>Message<span class="required">*</span></p>
-                                <textarea name="" id="message" placeholder="Your message"></textarea>
+                                <textarea name="" id="message_body" placeholder="Your message"></textarea>
                             </section>
 
                             <section class="submit-message">
@@ -91,36 +91,81 @@
 
 
     <script>
+        // const firstName = document.getElementById("firstName");
+        // const lastName = document.getElementById("lastName");
+        // const email = document.getElementById("email");
+        // const phone = document.getElementById("phone");
+        // const subject = document.getElementById("subject");
+        // const message = document.getElementById("message_body");
+
+        // const submitBtn = document.getElementById("submit");
+
+        // submitBtn.addEventListener("click", async function(){
+        // if(firstName.value === "" || lastName.value === "" || subject.value === "" || message.value === ""){
+        //     notify("Please fill in all required fields.", "bad");
+        //     return;
+        // } else{
+        //     let data = await fetch("../api/send_message/",{
+        //         method: "POST",
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //             'redirect': 'follow'
+        //         },
+        //         body: JSON.stringify({
+        //             'firstName': firstName.value,
+        //             'lastName': lastName.value,
+        //             'subject': subject.value,
+        //             'message': message.value,
+        //             'email': email.value,
+        //             'phone': phone.value,
+        //         }),
+        //     }).then(res => {
+        //         return res.json();
+        //     })
+
+        //     console.log(await data)
+        // }})
+
         $(document).ready(function(){
             let firstName = document.getElementById("firstName");
             let lastName = document.getElementById("lastName");
             let email = document.getElementById("email");
             let phone = document.getElementById("phone");
             let subject = document.getElementById("subject");
-            let message = document.getElementById("message");
+            let message = document.getElementById("message_body");
             const submitBtn = document.getElementById("submit");
 
             submitBtn.addEventListener("click", function(){
                 if(firstName.value === "" || lastName.value === "" || subject.value === "" || message.value === ""){
-                    alert("Please fill in all required fields.");
+                    notify("Please fill in all required fields.", "bad");
                     return;
                 } else{
                     $.ajax({
-                        url: "../api/send_message.php",
+                        url: "../api/send_message/",
                         type: "POST",
                         data: {
-                            firstName: firstName.value,
-                            lastName: lastName.value,
-                            email: email.value,
-                            phone: phone.value,
-                            subject: subject.value,
-                            message: message.value
+                            'firstName': firstName.value,
+                            'lastName': lastName.value,
+                            'email': email.value,
+                            'phone': phone.value,
+                            'subject': subject.value,
+                            'message': message.value
                         },
                         success: function(response){
-                            alert(`Message sent successfully`)
+                            console.log(response);
+
+                            notify(response.response, 'good');
+                            
+                            firstName.value = "";
+                            lastName.value = "";
+                            email.value = "";
+                            phone.value = "";
+                            subject.value = "";
+                            message.value = "";
                         },
                         error: function(xhr, status, error){
-                            console.error("Error sending message:", error);
+                            console.log(error)
+                            notify("An error occured and your message could not be sent. Please try again later","bad")
                         }
                     });
                 }
