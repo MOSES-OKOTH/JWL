@@ -1,41 +1,44 @@
 <?php
-    header("Content-Type: application/json");
-
-
     include "../db.php";
 
+    $raw = file_get_contents("php://input");
 
-    if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['subject']) && isset($_POST['message']) && (isset($_POST['email']) || isset($_POST['phone']))){
-        $first_name = $_POST['firstName'];
-        $last_name = $_POST['lastName'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
+    $raw = json_decode($raw, true);
 
-        $timestamp = date('YmdHis');
+    if(isset($raw["firstName"]) && isset($raw["lastName"]) && isset($raw["phone"]) && isset($raw["email"]) && isset($raw["subject"]) && isset($raw["message"])){
+        $firstName = $raw["firstName"];
+        $lastName = $raw["lastName"];
+        $phone = $raw["phone"];
+        $email = $raw["email"];
+        $subject = $raw["subject"];
+        $message = $raw["message"];
 
-        $sql = "INSERT INTO messages (first_name, last_name, phone_number, email, subject, message_body) VALUES ('{$first_name}', '{$last_name}', '{$phone}', '{$email}', '{$subject}', '{$message}');";
-
+        $sql = "INSERT INTO messages (first_name,last_name,phone_number,email,subject,message_body) VALUES ('{$firstName}','{$lastName}','{$phone}','{$email}','{$subject}','{$message}');";
 
         $result = mysqli_query($connection, $sql);
 
         if($result){
             echo json_encode([
-                'error' => false,
-                'error_message' => '',
-                'response' => 'Message sent successfully.'
+                "error"=>false,
+                "response"=>"Message sent successfully!"
             ]);
+
+            mysqli_close($connection);
+
+            return;
         } else{
             echo json_encode([
-                'error' => true,
-                'error_message' => 'An error occured while processing your request. Please try again later.'
+                "error"=>true,
+                "error_message"=>"An internal error occured and we could not submit your message. Please try again later"
             ]);
+
+            return;
         }
+
     } else{
         echo json_encode([
-            'error' => true,
-            'error_message' => 'Invalid parameters to process your request',
+            "error" => true,
+            "error_message" => "Invalid parameters to process your request. Please try again"
         ]);
     }
 ?>

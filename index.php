@@ -870,24 +870,47 @@
     </style>
 
     <script>
-        async function sendMessage(fname,lname,email,phone,subject,message){
-            const data = await fetch("./api/send_message/", {
+        const firstName = document.getElementById("firstName");
+        const lastName = document.getElementById("lastName");
+        const email = document.getElementById("email");
+        const phone = document.getElementById("phone");
+        const subject = document.getElementById("subject");
+        const message = document.getElementById("message_body");
+
+        const submitBtn = document.getElementById("submit");
+
+        submitBtn.addEventListener("click", function(){
+        if(firstName.value === "" || lastName.value === "" || subject.value === "" || message.value === ""){
+            notify("Please fill in all required fields.", "bad");
+            return;
+        } else{
+            fetch("../api/send_message/",{
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    'firstName': fname,
-                    'lastName': lname,
-                    'email': email,
-                    'phone': phone,
-                    'subject': subject,
-                    'message': message,
+                    'firstName': firstName.value,
+                    'lastName': lastName.value,
+                    'subject': subject.value,
+                    'message': message.value,
+                    'email': email.value,
+                    'phone': phone.value,
                 })
-            }).then(res => res.json()).then(message => console.log(message))
-        }
+            }).then(response => {
+                response.json()
+            }).then( data =>{
+                notify("Message sent successfully.", "good")
 
-        sendMessage('Moses','Okoth','test@mail.com','+254712345678','TEST MESSAGE','This is a test message')
+                firstName.value = "";
+                lastName.value = "";
+                subject.value = "";
+                message.value = "";
+                email.value = "";
+                phone.value = "";
+            }).catch(e => {notify("An error occured! Please try again later", "bad")})
+
+        }})
     </script>
 </body>
 </html>
