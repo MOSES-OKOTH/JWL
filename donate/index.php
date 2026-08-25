@@ -49,7 +49,7 @@
 
                         <div class="direct-payment">
                             <p>You can make direct payments to our Mpesa Till Number:</p>
-                            <p>123 456</p>
+                            <p>--- ---</p>
                         </div>
                     </div>
 
