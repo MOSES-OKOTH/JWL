@@ -1,6 +1,6 @@
 <?php
     // Include the needed variables
-    include __DIR__.'/constants.php';
+    include './constants.php';
 
     $authHeader = base64_encode(CONSUMER_KEY . ':' . CONSUMER_SECRET);
 
@@ -19,8 +19,8 @@
         curl_close($authCurl);
 
         echo json_encode([
-            'error' => '1',
-            'message' => "Failed to authenticate with Safaricom API: " . curl_error($authCurl)
+            'error' => true,
+            'error_message' => "Failed to authenticate with Safaricom API: " . curl_error($authCurl)
         ]);
         
         exit;
@@ -31,9 +31,10 @@
         $accessToken = json_decode($accessToken);
 
         $accessToken = $accessToken->access_token;
+
         
         curl_close($authCurl);
 
-        // echo $accessToken;
+        // echo "Access token: ".$accessToken;
     }
 ?>
