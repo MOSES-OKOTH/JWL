@@ -31,35 +31,67 @@
         $amount = $data['amount'];
         $account = $data['accountNumber'];
 
-        $stkPushCurl = curl_init();
+        $payload = json_encode([
+            "Password" => PASSWORD,
+            "BusinessShortCode" => PAYBILL_NUMBER,
+            "Timestamp" => TIMESTAMP,
+            "Amount" => $amount,
+            "PartyA" => $phone,
+            "PartyB" => PAYBILL_NUMBER,
+            "TransactionType" => "CustomerPayBillOnline",
+            "PhoneNumber" => $phone,
+            "TransactionDesc" => "Payment to JWL",
+            "AccountReference" => $account,
+            "CallBackURL" => STK_CALLBACK_URL
+        ]);
 
-        curl_setopt_array($stkPushCurl, array(
-            CURLOPT_URL => STK_PUSH_URL,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_POST => true,
-            CURLOPT_POSTFIELDS => json_encode(array(
-                "BusinessShortCode" => PAYBILL_NUMBER,
-                "Password" => PASSWORD,
-                "Timestamp" => TIMESTAMP,
-                "TransactionType" => "CustomerPayBillOnline",
-                "Amount" => $amount,
-                "PartyA" => $phoneNumber,
-                "PartyB" => PAYBILL_NUMBER,
-                "PhoneNumber" => $phoneNumber,
-                "CallBackURL" => "https://example.com/callback",
-                "AccountReference" => $accountNumber,
-                "TransactionDesc" => "Payment for " . $accountNumber
-            )),
-            CURLOPT_HTTPHEADER => array(
-                'Content-Type: application/json',
-                'Authorization: Bearer ' . $accessToken
-            )
-        ));
+        $ch = curl_init(STK_PUSH_URL);
 
-        $response = curl_exec($stkPushCurl);
-        $httpCode = curl_getinfo($stkPushCurl, CURLINFO_HTTP_CODE);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            "Content-Type: application/json",
+            "Authorization: Bearer ".$accessToken
+        ]);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        echo $response;
+        $response = curl_exec($ch);
+
+        $httpRes = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        if($httpRes == 200){
+            $responseData = json_decode($response, true);
+
+            if($responseData['ResponseCode'] == 0){
+                $requestID = $responseData['CheckoutRequestID'];
+
+                echo json_encode([
+                    "error" => false,
+                    "response" => $requestID
+                ]);
+
+                return;
+            } else{
+                http_response_code(500);
+
+                echo json_encode([
+                    "error" => true,
+                    "error_message" => $responseData
+                ]);
+
+                return;
+            }
+        } else{
+            http_response_code(400);
+            
+            echo json_encode(array(
+                "error" => true,
+                "error_message" => "Failed to initiate STK Push. HTTP Code: ".$httpRes,
+                "response" => $responseData
+            ));
+
+            return;
+        }
     } else {
         echo json_encode([
             "error" => true,
