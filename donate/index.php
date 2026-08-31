@@ -39,11 +39,11 @@
 
                             <div class="input-group">
                                 <p>Amount</p>
-                                <input type="number" id="mpesa-amount" placeholder="Amount in KES">
+                                <input type="text" id="mpesa-amount" placeholder="Amount in KES">
                             </div>
 
                             <div class="submit-mpesa">
-                                <button id="submit-mpesa">Send STK Push</button>
+                                <button id="submit-mpesa" style="display: flex; flex-direction: row;gap: 0.5rem;">Send STK Push</button>
                             </div>
                         </div>
 
@@ -358,6 +358,100 @@
             }
         }
     </style>
+
+    <script>
+        const phone = document.getElementById("phone");
+        const amount = document.getElementById("mpesa-amount");
+
+        const submitMpesaBtn = document.getElementById("submit-mpesa")
+
+        submitMpesaBtn.addEventListener("click", ()=>{
+            if(phone.value == "" || phone.value.split("").length < 10){
+                notify("Please enter a valid phone number", "bad");
+
+                return;
+            }
+
+            if(amount.value == ""){
+                notify("Please fill in the amount","bad");
+
+                return;
+            }
+
+            submitMpesaBtn.innerHTML = "<img src='../gallery/loading.gif' alt='Loading' style='height: 1.2rem; width: auto;'> Processing...";
+
+            const phoneArray = phone.value.split("");
+            phoneArray[0] = "254";
+
+            const phoneNumber = phoneArray.join("");
+
+            fetch("../api/mobile_payments/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "phoneNumber": phoneNumber,
+                    "amount": amount.value,
+                    "accountNumber": "JWL Kenya"
+                })
+            }).then(stkResponse => {
+                return stkResponse.json()
+            }).then(res => {
+                if(res.error !== true){
+                    notify("Request sent. Enter your PIN", "good");
+
+                    window.setTimeout(()=>{
+                        fetch(`../api/mobile_payments/query/?id=${res.response}`).then(qres =>{
+                            return qres.json();
+                        }).then(data => {
+                            if(data.error !== true){
+                                notify(data.response, "good");
+
+                                phone.value = "";
+                                amount.value = "";
+                                
+                                alert("Thanks for supporting us! We appreciate your help in making our ministry successful 🙏");
+
+                                submitMpesaBtn.textContent = "Send STK Push";
+
+                                return;
+                            } else{
+                                if(data.error_message){
+                                    notify(data.error_message, "bad");
+
+                                    setTimeout(()=>{
+                                        window.location.reload();
+                                    }, 10000)
+                                } else{
+                                    notify("An error occured. Please try again", "bad");
+
+                                    setTimeout(()=>{
+                                        window.location.reload();
+                                    }, 10000)
+                                }
+
+                                return;
+                            }
+                        })
+                    }, 45000)
+
+                    return;
+                } else{
+                    notify("An error occured while processing your payment request", "bad");
+                    
+                    window.setTimeout(()=>{
+                        window.location.reload()
+                    }, 5000)
+
+                    return;
+                }
+            })
+        })
+
+    </script>
+
+
     <?php
         include "../components/footer.php";
     ?>

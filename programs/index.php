@@ -21,7 +21,7 @@
             <div class="programs-main">
                 <div class="programs-text">
                     <p>
-                        Every young person deserves the chance to discover who they were created to be. At Jol Wo Lieec Ministry USA, we believe transformation happens when faith, education, creativity, and community come together around a young person with intention and love. That is why everything we do is built on four foundational ministries, each designed to meet young people where they are and walk with them toward who they are becoming.
+                        Every young person deserves the chance to discover who they were created to be. At Jol Wo Lieec Ministry Kenya Chapter, we believe transformation happens when faith, education, creativity, and community come together around a young person with intention and love. That is why everything we do is built on four foundational ministries, each designed to meet young people where they are and walk with them toward who they are becoming.
                         <br>
                         What makes our work even more remarkable is that it is carried entirely by volunteers who give freely of their time, talent, and passion because they genuinely believe in this generation.
                     </p>
