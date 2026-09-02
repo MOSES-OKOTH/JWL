@@ -37,7 +37,7 @@
 
                     <div class="input-group">
                         <div>
-                            <p>Phone Number</p>
+                            <p>Phone Number <span class="required">*</span></p>
                             <input type="text" id="phone" placeholder="Phone Number +2547********">
                         </div>
 
@@ -51,7 +51,7 @@
                         <div>
                             <p>Program of Interest <span class="required">*</span></p>
                             <select name="program" id="program">
-                                <option value="">-- Select Ministry --</option>
+                                <option value="">-- Select Program of Interest --</option>
                                 <option value="Luäŋyic">Luäŋyic</option>
                                 <option value="Lëk">Lëk</option>
                                 <option value="Agayth">Agayth</option>
@@ -60,9 +60,10 @@
                         </div>
 
                         <div>
-                            <p>County of Residence</p>
+                            <p>County of Residence <span class="required">*</span></p>
                             <select name="county" id="county">
-                                <option value="">-- Select County --</option>
+                                <option value="">-- Select County of Residence --</option>
+                                <option value="Diaspora">Diaspora</option>
                                 <option value="Baringo">Baringo</option>
                                 <option value="Bomet">Bomet</option>
                                 <option value="Bungoma">Bungoma</option>
@@ -184,6 +185,7 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 gap: 0.5rem;
             }
 
@@ -197,15 +199,242 @@
 
             .input-group div{
                 position: relative;
+                display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
+            }
+
+            .input-group div p{
+                font-size: 0.9rem;
+                font-weight: 400;
+            }
+
+            .input-group .required{
+                color: red;
+            }
+
+            .input-group div input, .input-group div select{
+                position: relative;
+                width: 100%;
+                min-width: 30vw;
+                outline: none;
+                padding: 0.5rem;
+                border: none;
+                border-bottom: 2px solid var(--blue1);
+                background: rgba(0,0,0,0.025);
+            }
+
+            #registerBtn{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                align-items: center;
+                margin-top: 2rem;
+                padding: 0.5rem 1rem;
+                border: 2px solid transparent;
+                background: var(--blue1);
+                color: white;
+                font-size: 0.95rem;
+                font-family: 'Ubuntu';
+                border-radius: 0.25rem;
+            }
+
+            #registerBtn img{
+                height: 1rem;
+                width: auto;
+            }
+
+            #registerBtn:hover{
+                background: white;
+                border: 2px solid var(--blue1);
+                color: var(--blue1);
+                cursor: pointer;
             }
         }
 
         /* MOBILE VIEW */
         @media screen and (max-width: 800px) {
-            
+            .join-container{
+                position: relative;
+                padding: 1.5rem;
+                width: 100%;
+                max-width: 100dvw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0,0,0,0.1);
+            }
+
+            .join{
+                position: relative;
+                width: 100%;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                padding: 4rem 2rem;
+            }
+
+            .join-header{
+               position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center; 
+            }
+
+            .join-header h1{
+                font-family: 'Oswald';
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: var(--blue2);
+            }
+
+            .join-main{
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .join-main p{
+                font-size: 0.85rem;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            .join-main .join-form{
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .join-main .join-form .input-group{
+                position: relative;
+                /* width: 50%; */
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .input-group div{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .input-group div p{
+                text-align: left;
+                font-size: 0.9rem;
+                font-weight: 400;
+            }
+
+            .input-group .required{
+                color: red;
+            }
+
+            .input-group div input, .input-group div select{
+                position: relative;
+                width: 100%;
+                min-width: calc(100vw - 8rem);
+                outline: none;
+                padding: 0.5rem;
+                border: none;
+                border-bottom: 2px solid var(--blue1);
+                background: rgba(0,0,0,0.025);
+            }
+
+            #registerBtn{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                align-items: center;
+                margin-top: 2rem;
+                padding: 0.5rem 1rem;
+                border: 2px solid transparent;
+                background: var(--blue1);
+                color: white;
+                font-size: 0.95rem;
+                font-family: 'Ubuntu';
+                border-radius: 0.25rem;
+            }
+
+            #registerBtn img{
+                height: 1rem;
+                width: auto;
+            }
+
+            #registerBtn:hover{
+                background: white;
+                border: 2px solid var(--blue1);
+                color: var(--blue1);
+                cursor: pointer;
+            }
         }
     </style>
+
+    <script>
+        const firstName = document.getElementById('fname');
+        const lastName = document.getElementById('lname');
+        const phone = document.getElementById('phone');
+        const email = document.getElementById('email');
+        const program = document.getElementById('program');
+        const county = document.getElementById('county');
+
+        const registerBtn = document.getElementById('registerBtn');
+
+        registerBtn.addEventListener('click', ()=>{
+            registerBtn.innerHTML = "<img src='../gallery/loading.gif' alt='loading'> Loading..."
+
+            fetch("../api/join/", {
+                method: "POST",
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify({
+                    "firstName": firstName.value,
+                    "lastName": lastName.value,
+                    "phoneNumber": phone.value,
+                    "email": email.value,
+                    "program": program.value,
+                    "county": county.value
+                })
+            }).then(response => {
+                return response.json()
+            }).then(res => {
+                if(res.error !== true){
+                    notify(res.response, "good");
+
+                    registerBtn.innerHTML = "Register";
+
+                    let interval = setInterval(()=>{
+                        firstName.value = ""
+                        lastName.value = ""
+                        phone.value = ""
+                        email.value = ""
+                        program.value = ""
+                        county.value = ""
+                    }, 2000)
+
+                    setTimeout(()=>{
+                        clearInterval(interval)
+                    }, 2500)
+
+                    return;
+                } else {
+                    notify(res.error_message, "bad")
+
+                    return;
+                }
+            })
+        })
+
+
+    </script>
 </body>
 </html>
