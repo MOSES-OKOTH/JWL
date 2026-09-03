@@ -176,20 +176,20 @@
         }
 
         #notification #notification-message{
-            font-size: 0.95vw;
+            font-size: 0.85vw;
             font-weight: 500;
         }
 
         .good-notification{
-            color: black;
-            background: rgba(0, 255, 0, 0.15);
+            color: white;
+            background: darkgreen;
             border: 2px solid green;
             border-radius: 6px;
         }
 
         .bad-notification{
             color: white;
-            background: rgba(255, 0, 0, 0.5);
+            background: rgba(255, 0, 0, 0.75);
             border: 2px solid red;
             border-radius: 6px;
         }
@@ -363,15 +363,15 @@
         }
 
         .good-notification{
-            color: black;
-            background: rgba(0, 255, 0, 0.15);
+            color: white;
+            background: darkgreen;
             border: 2px solid green;
             border-radius: 6px;
         }
 
         .bad-notification{
             color: white;
-            background: rgba(255, 0, 0, 0.5);
+            background: rgba(255, 0, 0, 0.75);
             border: 2px solid red;
             border-radius: 6px;
         }
