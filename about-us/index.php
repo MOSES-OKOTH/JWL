@@ -139,33 +139,39 @@
 
                         <div class="leaders-main">
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rt. Rev. Gabriel Thuch Agoth</h5>
-                                <p class="leader-title">Dean of JIP & Bishop of Kongor Diocese</p>
+                                <img src="../gallery/JIP Bishops/001.jpeg" alt="">
+                                <h5 class="leader-name">His.Grace Moses Anur Ayom Anur</h5>
+                                <p class="leader-title">Archbishop of Jonglei Internal  province and Diocesan Bishop of Bor</p>
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rt. Rev. Gabriel Kuol Garang</h5>
-                                <p class="leader-title">Secretary of JIP & Bishop of Wernyol Diocese</p>
+                                <img src="../gallery/JIP Bishops/002.jpeg" alt="">
+                                <h5 class="leader-name">Rt.Rev.Gabriel Thuch Agoth</h5>
+                                <p class="leader-title">The dean of JIP and Diocesan Bishop of Kongor Diocese</p>
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rt. Rev. Dr. Zachariah Manyok Biar</h5>
-                                <p class="leader-title">Head of Worship & Liturgy in JIP & Bishop of Wangulei Diocese</p>
+                                <img src="../gallery/JIP Bishops/003.jpeg" alt="">
+                                <h5 class="leader-name">Rt.Rev.Gabriel Kuol Garang</h5>
+                                <p class="leader-title">The Secretary House of Bishop JIP and diocesan bishop of Wernyol Diocese</p>
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rt. Rev. Daniel Awan Manyok</h5>
-                                <p class="leader-title">Head of Agriculture in JIP & Bishop of Athooch Diocese</p>
+                                <img src="../gallery/JIP Bishops/004.jpeg" alt="">
+                                <h5 class="leader-name">Rt.Rev.Dr.Zachariah Manyok Biar</h5>
+                                <p class="leader-title">The head of Liturgy and worship JIP and Diocesan Bishop of Wangulei Diocese</p>
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rt. Rev. Jacob Deng Garang</h5>
-                                <p class="leader-title">Bishop in charge of Youth</p>
+                                <img src="../gallery/JIP Bishops/005.jpeg" alt="">
+                                <h5 class="leader-name">Rt .Rev.Daniel Awan Manyok</h5>
+                                <p class="leader-title">Head of Agriculture JIP and Diocesan Bishop of Athooch Diocese</p>
+                            </div>
+
+                            <div class="leader">
+                                <img src="../gallery/JIP Bishops/006.jpeg" alt="">
+                                <h5 class="leader-name">Rt.Rev.Samuel Galuak Marial</h5>
+                                <p class="leader-title">Head of Theological training and Education JIP and Suffragan Bishop of Padiet Area Diocese</p>
                             </div>
                         </div>
                     </div>
@@ -177,7 +183,7 @@
 
                         <div class="leaders-main">
                             <div class="leader">
-                                <img src="../gallery/Kenya Executives/01.jpg" alt="">
+                                <img src="../gallery/Kenya Executives/001.jpg" alt="">
                                 <h5 class="leader-name">Ven. Can. Gabriel Chol Pareng</h5>
                                 <p class="leader-title">Supervisor</p>
 
@@ -185,7 +191,7 @@
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/Kenya Executives/01.jpg" alt="">
+                                <img src="../gallery/Kenya Executives/002.jpeg" alt="">
                                 <h5 class="leader-name">Abraham Jurkuch Thuch</h5>
                                 <p class="leader-title">Chairperson</p>
 
@@ -193,7 +199,7 @@
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/Kenya Executives/01.jpg" alt="">
+                                <img src="../gallery/Kenya Executives/003.jpeg" alt="">
                                 <h5 class="leader-name">Rev. Peter Chol Dut</h5>
                                 <p class="leader-title">Deputy Chairperson</p>
 
@@ -201,7 +207,7 @@
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/Kenya Executives/01.jpg" alt="">
+                                <img src="../gallery/Kenya Executives/004.jpeg" alt="">
                                 <h5 class="leader-name">Jacob Mamer Panchol</h5>
                                 <p class="leader-title">Secretary General</p>
 
@@ -209,9 +215,17 @@
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/Kenya Executives/01.jpg" alt="">
+                                <img src="../gallery/Kenya Executives/005.jpeg" alt="">
                                 <h5 class="leader-name">Mercy Achol Deng</h5>
                                 <p class="leader-title">Treasurer</p>
+
+                                <a href="https://wa.me/+254700368206" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254700368206</a>
+                            </div>
+
+                            <div class="leader">
+                                <img src="../gallery/Kenya Executives/006.jpeg" alt="">
+                                <h5 class="leader-name">Jacob Yaak Aliau</h5>
+                                <p class="leader-title">Deputy Treasurer</p>
 
                                 <a href="https://wa.me/+254700368206" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254700368206</a>
                             </div>
@@ -226,8 +240,8 @@
 
                         <div class="leaders-main">
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rev. Sarah Chaar Mach</h5>
+                                <img src="../gallery/Archdeaconry Leaders/001.jpeg" alt="">
+                                <h5 class="leader-name">Dup.Dj.Jerry Ngor Chol</h5>
                                 <p class="leader-region">
                                     <i class="fa-solid fa-map-location"></i> Nakuru
                                 </p>
@@ -235,8 +249,8 @@
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rev. John Panchol Kon</h5>
+                                <img src="../gallery/Archdeaconry Leaders/003.jpeg" alt="">
+                                <h5 class="leader-name">Dup.Eng.Dj.Daniel Lual Mayen Adiit</h5>
                                 <p class="leader-region">
                                     <i class="fa-solid fa-map-location"></i> Nairobi
                                 </p>
@@ -244,8 +258,8 @@
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rev. Gabriel Manyok Chachiek</h5>
+                                <img src="../gallery/Archdeaconry Leaders/002.jpeg" alt="">
+                                <h5 class="leader-name">Dup.Dj.Santino Kuol Magai</h5>
                                 <p class="leader-region">
                                     <i class="fa-solid fa-map-location"></i> Eldoret
                                 </p>
@@ -253,8 +267,8 @@
                             </div>
 
                             <div class="leader">
-                                <img src="../gallery/JIP Bishops/01.jpg" alt="">
-                                <h5 class="leader-name">Rev. David Deng Duop</h5>
+                                <img src="../gallery/Archdeaconry Leaders/004.jpeg" alt="">
+                                <h5 class="leader-name">Dup.Micheal Majok Mayen</h5>
                                 <p class="leader-region">
                                     <i class="fa-solid fa-map-location"></i> Kakuma
                                 </p>

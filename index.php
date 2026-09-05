@@ -36,7 +36,7 @@
                 </h2>
 
                 <p>
-                    <span>Jol Wo Lieec</span> (JWL) Youth Ministry is a vibrant, Christ-centered movement within the Episcopal Church of South Sudan (ECSS). Our name, Jel Wo Lieec, translates to "God, Look Upon Us," a prayerful declaration that reflects our complete dependence on God's grace and guidance in all we do.
+                    <span>Jol Wo Lieec</span> (JWL) Youth Ministry is a vibrant, Christ-centered movement within the Episcopal Church of South Sudan (ECSS). Our name, Jel Wo Lieec Nhialic, translates to "God, Look Upon Us," a prayerful declaration that reflects our complete dependence on God's grace and guidance in all we do.
                 </p>
             </div>
 
