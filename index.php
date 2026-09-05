@@ -36,7 +36,7 @@
                 </h2>
 
                 <p>
-                    <span>Jol Wo Lieec</span> (JWL) Youth Ministry is a vibrant, Christ-centered movement within the Episcopal Church of South Sudan (ECSS). Our name, Jel Wo Lieec Nhialic, translates to "God, Look Upon Us," a prayerful declaration that reflects our complete dependence on God's grace and guidance in all we do.
+                    <span>Jɔl-Wɔ-Lieec</span> (JWL) Youth Ministry is a vibrant, Christ-centered movement within the Episcopal Church of South Sudan (ECSS). Our name, Jɔl-Wɔ-Lieec Nhialic, translates to "God, Look Upon Us," a prayerful declaration that reflects our complete dependence on God's grace and guidance in all we do.
                 </p>
             </div>
 
@@ -45,7 +45,7 @@
                     <h2>Our Foundation</h2>
 
                     <p>
-                        Rooted in a rich history of faith and perseverance, our ministry traces its origins to the early missionary work of Archibald Shaw in Malek, Bor, beginning in 1906. The spiritual revival of the 1970s galvanized young Dinka Christians to organize a structured evangelistic movement, which formally adopted the name Jel Wo Lieec in 1989. This legacy of dedication and resilience continues to inspire our mission today.
+                        Rooted in a rich history of faith and perseverance, our ministry traces its origins to the early missionary work of Archibald Shaw in Malek, Bor, beginning in 1906. The spiritual revival of the 1970s galvanized young Dinka Christians to organize a structured evangelistic movement, which formally adopted the name Jɔl-Wɔ-Lieec in 1989. This legacy of dedication and resilience continues to inspire our mission today.
                     </p>
                 </div>
 
@@ -97,13 +97,14 @@
                     Join us in our mission to empower the next generation! Whether you want to learn more about our programs, partner with us, or support our efforts, we are here to connect with you. Your involvement makes a difference.
                 </h5>
 
-                <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+                
                 <a href="https://wa.me/254798020310" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 <a href="tel:+254792913312" target="_blank"><i class="fa-solid fa-phone"></i> Call Us</a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i> X | Twitter</a>
+                <a href="https://web.facebook.com/chingka.gelvi"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <!-- <a href=""><i class="fa-brands fa-x-twitter"></i> X | Twitter</a>
                 <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
-                <a href=""><i class="fa-brands fa-tiktok"></i> TikTok</a>
-                <a href=""><i class="fa-brands fa-youtube"></i> YouTube</a>
+                <a href=""><i class="fa-brands fa-tiktok"></i> TikTok</a> -->
+                <a href="https://www.youtube.com/@jwlkenya"><i class="fa-brands fa-youtube"></i> YouTube</a>
                 <a href="mailto:jwlkenyachapter@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Mail Us</a>
             </div>
 

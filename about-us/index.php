@@ -94,9 +94,9 @@
                         <h4>THE ORIGIN OF JWL MINISTRY</h4>
 
                         <P>
-                            The JWL (Jol Wo Lieec) Youth Ministry was established to equip young people within the Episcopal Church of South Sudan with sound biblical teaching, leadership skills, and a strong foundation in Anglican tradition.
+                            The JWL (Jɔl Wɔ Lieec) Youth Ministry was established to equip young people within the Episcopal Church of South Sudan with sound biblical teaching, leadership skills, and a strong foundation in Anglican tradition.
                             <br><br>
-                            The ministry's name, "Jol Wo Lieec" (People of the Word), reflects its core commitment to Scripture, discipleship, and the proclamation of the Gospel.
+                            The ministry's name, "Jɔl Wɔ Lieec" (God, Look Upon Us), reflects its core commitment to Scripture, discipleship, and the proclamation of the Gospel.
                         </P>
                     </div>
 
@@ -187,7 +187,7 @@
                                 <h5 class="leader-name">Ven. Can. Gabriel Chol Pareng</h5>
                                 <p class="leader-title">Supervisor</p>
 
-                                <a href="https://wa.me/+254745641131" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254745641131</a>
+                                <a href="https://wa.me/+254745641131" target="_blank" class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254745641131</a>
                             </div>
 
                             <div class="leader">
@@ -195,7 +195,7 @@
                                 <h5 class="leader-name">Abraham Jurkuch Thuch</h5>
                                 <p class="leader-title">Chairperson</p>
 
-                                <a href="https://wa.me/+254798020310" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254798020310</a>
+                                <a href="https://wa.me/+254798020310" target="_blank" class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254798020310</a>
                             </div>
 
                             <div class="leader">
@@ -203,7 +203,7 @@
                                 <h5 class="leader-name">Rev. Peter Chol Dut</h5>
                                 <p class="leader-title">Deputy Chairperson</p>
 
-                                <a href="https://wa.me/+254794318160" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254794318160</a>
+                                <a href="https://wa.me/+254794318160" target="_blank" class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254794318160</a>
                             </div>
 
                             <div class="leader">
@@ -211,7 +211,7 @@
                                 <h5 class="leader-name">Jacob Mamer Panchol</h5>
                                 <p class="leader-title">Secretary General</p>
 
-                                <a href="https://wa.me/+254792913312" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254792913312</a>
+                                <a href="https://wa.me/+254792913312" target="_blank" class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254792913312</a>
                             </div>
 
                             <div class="leader">
@@ -219,7 +219,7 @@
                                 <h5 class="leader-name">Mercy Achol Deng</h5>
                                 <p class="leader-title">Treasurer</p>
 
-                                <a href="https://wa.me/+254700368206" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254700368206</a>
+                                <a href="https://wa.me/+254700368206" target="_blank" class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254700368206</a>
                             </div>
 
                             <div class="leader">
@@ -227,7 +227,33 @@
                                 <h5 class="leader-name">Jacob Yaak Aliau</h5>
                                 <p class="leader-title">Deputy Treasurer</p>
 
-                                <a href="https://wa.me/+254700368206" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254700368206</a>
+                                <a href="https://wa.me/+254114042394" target="_blank" class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254114042394</a>
+                            </div>
+
+                            <div class="leader">
+                                <img src="../gallery/Kenya Executives/007.jpeg" alt="">
+                                <h5 class="leader-name">John Yuang Thon</h5>
+                                <p class="leader-title">Infomation Secretary</p>
+
+                                <a href="https://wa.me/+254791151854" target="_blank" class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254791151854</a>
+                            </div>
+
+
+
+                            <div class="leader">
+                                <img src="../gallery/Kenya Executives/008.jpeg" alt="">
+                                <h5 class="leader-name">Joshua Mathiang Jok Awuol</h5>
+                                <p class="leader-title">Organizer</p>
+
+                                <a href="https://wa.me/+254704575502" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254704575502</a>
+                            </div>
+
+                            <div class="leader">
+                                <img src="../gallery/Kenya Executives/009.jpeg" alt="">
+                                <h5 class="leader-name">James Alier Mach</h5>
+                                <p class="leader-title">Deputy Organizer</p>
+
+                                <a href="https://wa.me/+254119328720" target="_blank    " class="leader-contacts"><i class="fa-brands fa-whatsapp"></i> +254119328720</a>
                             </div>
                         </div>
                     </div>
@@ -291,7 +317,7 @@
                         <address>
                             <p>JWL Kenya Chapter Youth Ministry</p>
                             <p>P.O Box 237 - 30600</p>
-                            <p>Nakuru, Kenya</p>
+                            <p>Kenya</p>
                         </address>
                     </div>
 
@@ -307,9 +333,11 @@
                     <div class="socials">
                         <h4>Social Media</h4>
 
-                        <a href=""><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                        <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
-                        <a href=""><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a href="https://wa.me/254798020310" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <a href="tel:+254792913312" target="_blank"><i class="fa-solid fa-phone"></i> Call Us</a>
+                        <a href="https://web.facebook.com/chingka.gelvi"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        <a href="https://www.youtube.com/@jwlkenya"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                        <a href="mailto:jwlkenyachapter@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Mail Us</a>
                     </div>
                 </div>
 
