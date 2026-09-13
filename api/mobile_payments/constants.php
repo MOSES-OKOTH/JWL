@@ -18,7 +18,7 @@
     define('STK_QUERY_URL', 'https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query');
 
     // STK Callback URL
-    define('STK_CALLBACK_URL', 'https://jwlkenya.hstn.me/api/mobile_payments/validate/');
+    define('STK_CALLBACK_URL', 'https://jwlkenya.hstn.me/api/mobile_payments/callback/');
 
     // Passkey
     define('PASSKEY', 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919');

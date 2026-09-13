@@ -30,7 +30,7 @@
 
                         <a href="tel:+254792913312"><i class="fa-solid fa-phone"></i> +254 792 913 312</a>
 
-                        <a href="https://maps.app.goo.gl/62G6XHJ5RVACUd7WA"><i class="fa-solid fa-map-location"></i> Nakuru, Kenya</a>
+                        <a href="https://maps.app.goo.gl/62G6XHJ5RVACUd7WA"><i class="fa-solid fa-map-location"></i> Kenya</a>
 
                         <a href="mail:jwlkenyachapter@gmail.com"><i class="fa-solid fa-envelope"></i> jwlkenyachapter@gmail.com</a>
                     </div>
